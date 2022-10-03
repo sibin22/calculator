@@ -1,0 +1,43 @@
+  <docktype.html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+
+    <div class="screen">
+        <p id="display"></p>
+    </div>
+    
+    <div id="button">
+        <button class="power" onclick="destroy()">AC</button>
+        <button class="operator" onclick="destroy()">C</button>
+        <button class="operator" onclick="key('%')">%</button>
+        <button class="operator" onclick="key('/')">/</button>
+        <button onclick="key('7')">7</button>
+        <button onclick="key('8')">8</button>
+        <button onclick="key('9')">9</button>
+        <button class="operator"  onclick="key('+')">+</button>
+        <button onclick="key('4')">4</button>
+        <button onclick="key('5')">5</button>
+        <button onclick="key('6')">6</button>
+        <button class="operator" onclick="key('-')">-</button>
+        <button onclick="key('1')">1</button>
+        <button onclick="key('2')">2</button>
+        <button onclick="key('3')">3</button>
+        <button class="operator"  onclick="key('*')">x</button>
+        <button onclick="key('.')">.</button>
+        <button onclick="key('0')">0</button>
+        <button onclick="back()"><i class="bi bi-backspace"></i></button>
+        <button class="operator"onclick="solve()">=</button>
+    </div>
+</div>
+
+
+</body>
+</html>
